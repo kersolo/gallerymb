@@ -1,0 +1,9 @@
+.banner {
+  background-color: antiquewhite;
+  padding: 50px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10%;
+}
