@@ -6,7 +6,7 @@ function Gallery(props) {
   return (
     <article className="gallery">
       {peintures.map((peinture) => (
-        <Cards tableau={peinture} />
+        <Cards tableau={peinture} key={peinture.id} />
       ))}
     </article>
   );

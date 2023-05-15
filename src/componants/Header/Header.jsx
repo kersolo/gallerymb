@@ -7,8 +7,8 @@ function Header(props) {
       <h1>Yves Meriel-Bussy</h1>
       <nav className="nav">
         <Link to="/">Accueil</Link>
-        <Link to="/">Catégorie</Link>
-        <Link to="/">YMB</Link>
+        <Link to="/Categories">Catégories</Link>
+        <Link to="/YMB">YMB</Link>
         <Link to="/">contact</Link>
       </nav>
     </header>
