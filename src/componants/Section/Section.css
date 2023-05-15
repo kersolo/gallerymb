@@ -1,10 +1,14 @@
-.section-container {
-  background-color: wheat;
+.section-container-close {
+  text-align: center;
+  cursor: pointer;
 }
-.cards-section {
+.section-container-open {
+  cursor: pointer;
 }
-.div-section {
+.desSection {
+  background-color: aqua;
 }
-.cards-section-img {
-  /* width: 25%; */
+.imgCat {
+  width: 20%;
+  margin: 20px;
 }

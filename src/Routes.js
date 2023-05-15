@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Accueil from './pages/Accueil';
 import FichePeinture from './pages/FichePeinture';
 import YMB from './pages/YMB';
-import Categories from './pages/Categories';
+import Categories from './pages/Categorie/Categories';
 
 function Router(props) {
   return (
