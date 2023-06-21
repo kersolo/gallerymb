@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express'); // import du framework express
-const port = process.env.PORT || 3000; // création de la constante port
+const port = process.env.PORT || 5000; // création de la constante port
 const path = require('path'); //import du module path
 
 const productRoutes = require('./routes/product');

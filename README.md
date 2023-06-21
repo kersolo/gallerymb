@@ -1,4 +1,4 @@
 # START
 
-// Pour le back : nodemon server ou node server
-// Pour le front : npm start
+// back : npm install - node server or nodemon server
+// front : npm install - npm start
