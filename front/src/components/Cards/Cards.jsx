@@ -3,7 +3,6 @@ import './Cards.css';
 
 export default function Thumb({ tableaux }) {
   const id = tableaux.id;
-  console.log(id);
 
   return (
     <Link to={`/FichePeinture/${id}`} className="thumb">

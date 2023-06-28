@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import Data from '../Data/Data';
 import Cards from '../components/Cards/Cards';
 import '../App.css';
+import Banner from '../components/Banner/Banner';
+// import ImgBanner from '../assets/img1.jpg';
+import ImgBanner from '../assets/gall1.jpg';
 
 function App() {
   const [data, setData] = useState([]);
@@ -15,11 +18,14 @@ function App() {
   }, []);
 
   return (
-    <article className="gallery-container">
-      {data.map((tableaux, index) => (
-        <Cards key={index} tableaux={tableaux} />
-      ))}
-    </article>
+    <main>
+      <Banner src={ImgBanner} text={"De l'ombre à la lumière"} alt={'Banner'} />
+      <article className="gallery-container">
+        {data.map((tableaux, index) => (
+          <Cards key={index} tableaux={tableaux} />
+        ))}
+      </article>
+    </main>
   );
 }
 
