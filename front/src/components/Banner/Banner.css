@@ -11,10 +11,18 @@
   height: 323px;
   object-fit: cover;
   border-radius: 25px;
-  filter: brightness(0.8);
+  filter: brightness(0.6);
+  filter: contrast(50%) brightness(0.6);
+  filter: contrast(60%) brightness(75%);
 }
 .text {
   position: absolute;
   font-size: 48px;
+  font-size: 58px;
   color: rgb(255, 255, 255);
+  background: linear-gradient(120deg, #000000 20%, #fcfcfc 100%);
+  background: linear-gradient(120deg, #000000 20%, #fcfcfc 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
