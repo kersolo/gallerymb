@@ -7,6 +7,7 @@ const products = [
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     altTxt: "Photo d'une aquarelle",
+    category: 'Aquarelles',
   },
   {
     id: '2',
@@ -16,6 +17,7 @@ const products = [
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     altTxt: "Photo d'une aquarelle",
+    category: 'Aquarelles',
   },
   {
     id: '3',
@@ -25,6 +27,7 @@ const products = [
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     altTxt: "Photo d'une aquarelle",
+    category: 'Aquarelles',
   },
   {
     id: '4',
@@ -34,6 +37,7 @@ const products = [
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     altTxt: "Photo d'une aquarelle",
+    category: 'Aquarelles',
   },
   {
     id: '5',
@@ -43,6 +47,7 @@ const products = [
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     altTxt: "Photo d'une aquarelle",
+    category: 'Aquarelles',
   },
   {
     id: '6',
@@ -52,6 +57,7 @@ const products = [
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     altTxt: "Photo d'une aquarelle",
+    category: 'Aquarelles',
   },
   {
     id: '7',
@@ -61,6 +67,7 @@ const products = [
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     altTxt: "Photo d'une aquarelle",
+    category: 'Aquarelles',
   },
   {
     id: '8',
@@ -70,6 +77,37 @@ const products = [
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     altTxt: "Photo d'une aquarelle",
+    category: 'Aquarelles',
+  },
+  {
+    id: '9',
+    name: 'Petites bretonnes',
+    price: 2100,
+    imageUrl: 'hpa01.jpg',
+    description:
+      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    altTxt: "Photo d'une aquarelle",
+    category: 'Huiles',
+  },
+  {
+    id: '10',
+    name: 'Femmes aux bouquets',
+    price: 900,
+    imageUrl: 'hpa02.jpg',
+    description:
+      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    altTxt: "Photo d'une aquarelle",
+    category: 'Huiles',
+  },
+  {
+    id: '11',
+    name: 'Course de chevaux',
+    price: 1000,
+    imageUrl: 'hpa03.jpg',
+    description:
+      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    altTxt: "Photo d'une aquarelle",
+    category: 'Huiles',
   },
 ];
 

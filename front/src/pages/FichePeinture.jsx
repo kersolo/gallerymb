@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Data from '../Data/Data';
+import './FichePeintures.css';
 
 function FichePeinture(props) {
   const [data, setData] = useState();
@@ -22,9 +23,9 @@ function FichePeinture(props) {
   return (
     data && (
       <div style={{ textAlign: 'center' }}>
-        <h2>{data.name} </h2>
+        <h2 className="text-fichePeintures">{data.name} </h2>
         <h4>{data.price} </h4>
-        <img src={data.imageUrl} alt="" />
+        <img className="img-fichePeinture" src={data.imageUrl} alt="" />
         <p>{data.description} </p>
       </div>
     )

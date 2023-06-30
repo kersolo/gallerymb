@@ -3,10 +3,9 @@ import Data from '../Data/Data';
 import Cards from '../components/Cards/Cards';
 import '../App.css';
 import Banner from '../components/Banner/Banner';
-// import ImgBanner from '../assets/img1.jpg';
 import ImgBanner from '../assets/gall1.jpg';
 
-function App() {
+function Accueil() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -29,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default Accueil;

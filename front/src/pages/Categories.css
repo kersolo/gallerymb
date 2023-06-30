@@ -1,0 +1,12 @@
+.Categories {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* width: 50%; */
+}
+.Link-Cat {
+  text-decoration: none;
+  color: black;
+  font-size: 80px;
+  margin: 50px;
+}
