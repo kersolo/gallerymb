@@ -18,9 +18,9 @@ function Aquarelles(props) {
   return (
     <article className="gallery-container">
       {data
-        .filter((paintings) => paintings.category === "Aquarelles")
-        .map((paintings, index) => (
-          <Cards key={index} tableaux={paintings} />
+        .filter((painting) => painting.category === "Aquarelles")
+        .map((painting) => (
+          <Cards key={painting.id} tableaux={painting} />
         ))}
     </article>
   );

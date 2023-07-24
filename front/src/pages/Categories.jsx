@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import './Categories.css';
+import { Link } from "react-router-dom";
+import "./Categories.css";
 
-function Categories(props) {
+function Categories() {
   return (
     <div className="Categories">
       <Link to="/Categories/Aquarelles" className="Link-Cat">
