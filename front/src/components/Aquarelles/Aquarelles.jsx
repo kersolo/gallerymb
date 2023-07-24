@@ -1,8 +1,8 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React from "react";
+import { useState, useEffect } from "react";
 // import Data from '';
-import Cards from '../Cards/Cards';
-import Data from '../../Data/Data';
+import Cards from "../Cards/Cards";
+import Data from "../../Data/Data";
 
 function Aquarelles(props) {
   const [data, setData] = useState([]);
@@ -17,12 +17,11 @@ function Aquarelles(props) {
 
   return (
     <article className="gallery-container">
-      {data.map((tableaux, index) => (
-        <Cards
-          key={index}
-          tableaux={tableaux.category === 'Aquarelles' && tableaux}
-        />
-      ))}
+      {data
+        .filter((paintings) => paintings.category === "Aquarelles")
+        .map((paintings, index) => (
+          <Cards key={index} tableaux={paintings} />
+        ))}
     </article>
   );
 }
