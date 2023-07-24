@@ -1,20 +1,21 @@
 import { Routes, Route } from 'react-router-dom';
-import Accueil from './pages/Accueil';
-import FichePeinture from './pages/FichePeinture';
+import Home from './pages/Home';
+import PaintInfos from './pages/PaintInfos';
 // import YMB from './pages/YMB';
 import Categories from './pages/Categories';
-import Aquarelles from './components/Aquarelles/Aquarelles';
-import Huiles from './components/Huiles/Huiles';
+import Watercolors from './components/Watercolors/Watercolors';
+import OilPainting from './components/OilPainting/OilPainting';
+import YMB from './pages/YMB';
 
 function Router(props) {
   return (
     <Routes>
-      <Route path="/" element={<Accueil />} />
-      <Route path="/FichePeinture/:id" element={<FichePeinture />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/PaintInfos/:id" element={<PaintInfos />} />
       <Route path="/Categories" element={<Categories />} />
-      <Route path="/Categories/Aquarelles" element={<Aquarelles />} />
-      <Route path="/Categories/Huiles" element={<Huiles />} />
-      {/* <Route path="/YMB" element={<YMB />} /> */}
+      <Route path="/Categories/Watercolors" element={<Watercolors />} />
+      <Route path="/Categories/OilPainting" element={<OilPainting />} />
+      <Route path="/YMB" element={<YMB />} />
     </Routes>
   );
 }

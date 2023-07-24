@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import './Cards.css';
 
-export default function Thumb({ tableaux }) {
-  const id = tableaux.id;
+export default function Thumb({ paintings }) {
+  const id = paintings.id;
 
-  if (tableaux !== false) {
+  if (paintings !== false) {
     return (
-      <Link to={`/FichePeinture/${id}`} className="thumb">
-        <img className="img-thumb" src={tableaux.imageUrl} alt="" />
-        <p className="accommodation-title">{tableaux.name}</p>
+      <Link to={`/PaintInfos/${id}`} className="thumb">
+        <img className="img-thumb" src={paintings.imageUrl} alt="" />
+        <p className="accommodation-title">{paintings.name}</p>
       </Link>
     );
   }

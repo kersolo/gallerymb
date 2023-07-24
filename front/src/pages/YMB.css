@@ -1,0 +1,18 @@
+.img-painter {
+  width: 30%;
+  width: 150px;
+  float: right;
+  float: left;
+  margin: 10px;
+}
+.YMB-title {
+  text-align: center;
+}
+.YMB-text {
+  margin: 10px;
+}
+
+/* **************************** */
+
+@media screen and (min-width: 800px) {
+}

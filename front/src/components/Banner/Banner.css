@@ -19,10 +19,54 @@
   position: absolute;
   font-size: 48px;
   font-size: 58px;
+  color: rgb(205, 205, 205);
+  /* font-weight: 600; */
+  text-shadow: 0 -7px 4px rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.text:hover {
+  color: white;
+  font-weight: 600;
+  text-shadow: 0 -7px 4px rgb(134, 134, 134);
+}
+
+/* .text {
+  position: absolute;
+  font-size: 48px;
+  font-size: 58px;
   color: rgb(255, 255, 255);
   background: linear-gradient(120deg, #000000 20%, #fcfcfc 100%);
   background: linear-gradient(120deg, #000000 20%, #fcfcfc 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+} */
+
+/* **************************** */
+
+@media screen and (max-width: 1000px) {
+  .text {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    justify-content: flex-start;
+    height: 111px;
+  }
+
+  .img-banner {
+    height: 100%;
+  }
+  .text {
+    font-size: 24px;
+    margin-left: 20px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .text {
+    font-size: 20px;
+  }
 }

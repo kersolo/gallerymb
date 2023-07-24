@@ -5,7 +5,7 @@ import '../App.css';
 import Banner from '../components/Banner/Banner';
 import ImgBanner from '../assets/gall1.jpg';
 
-function Accueil() {
+function Home() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -20,12 +20,12 @@ function Accueil() {
     <main>
       <Banner src={ImgBanner} text={"De l'ombre à la lumière"} alt={'Banner'} />
       <article className="gallery-container">
-        {data.map((tableaux, index) => (
-          <Cards key={index} tableaux={tableaux} />
+        {data.map((paintings, index) => (
+          <Cards key={index} paintings={paintings} />
         ))}
       </article>
     </main>
   );
 }
 
-export default Accueil;
+export default Home;

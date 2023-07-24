@@ -1,27 +1,19 @@
 import './Banner.css';
+import { Link } from 'react-router-dom';
+import ImgBannerCat from '../../assets/femme_voilier.jpg';
 
-//composant Banner utilisé sur la page d'accueil et la page à propos//
 export default function Banner({ src, text, alt }) {
-  return (
+  return src !== ImgBannerCat ? (
     <aside className="banner">
       <img className="img-banner" src={src} alt={alt} />
-      <p className="text"> {text} </p>
+      <Link to="/YMB" className="text">
+        {text}
+      </Link>
+      {/* <p className="text"> {text} </p> */}
+    </aside>
+  ) : (
+    <aside className="banner">
+      <img className="img-banner" src={src} alt={alt} />
     </aside>
   );
 }
-// import ImgBannerAPropos from '../../assets/bannerAPropos.svg';
-// import './banner.css';
-
-// //composant Banner utilisé sur la page d'accueil et la page à propos//
-// export default function Banner({ src, text, alt }) {
-//   return src !== ImgBannerAPropos ? (
-//     <aside className="banner">
-//       <img className="img-banner" key={src.id} src={src} alt={alt} />
-//       <p className="text"> {text} </p>
-//     </aside>
-//   ) : (
-//     <aside className="banner-APropos">
-//       <img className="img-banner" key={src.id} src={src} alt={alt} />
-//     </aside>
-//   );
-// }

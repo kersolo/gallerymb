@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Cards from '../Cards/Cards';
 import Data from '../../Data/Data';
 
-function Huiles(props) {
+function OilPainting(props) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -16,14 +16,14 @@ function Huiles(props) {
 
   return (
     <article className="gallery-container">
-      {data.map((tableaux, index) => (
+      {data.map((paintings, index) => (
         <Cards
           key={index}
-          tableaux={tableaux.category === 'Huiles' && tableaux}
+          paintings={paintings.category === 'Huiles' && paintings}
         />
       ))}
     </article>
   );
 }
 
-export default Huiles;
+export default OilPainting;
