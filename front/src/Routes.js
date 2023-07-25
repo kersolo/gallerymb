@@ -7,7 +7,7 @@ import Watercolors from './components/Watercolors/Watercolors';
 import OilPainting from './components/OilPainting/OilPainting';
 import YMB from './pages/YMB';
 
-function Router(props) {
+function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />

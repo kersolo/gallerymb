@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useQuery } from 'react-query';
 import Data from '../Data/Data';
 import Cards from '../components/Cards/Cards';
 import '../App.css';
@@ -6,22 +6,41 @@ import Banner from '../components/Banner/Banner';
 import ImgBanner from '../assets/gall1.jpg';
 
 function Home() {
-  const [data, setData] = useState([]);
+  const { isLoading, data } = useQuery('paintings', Data);
 
-  useEffect(() => {
-    const getData = async () => {
-      const res = await Data();
-      setData(res);
-    };
-    getData();
-  }, []);
+  if (isLoading)
+    return (
+      <main>
+        <Banner
+          src={ImgBanner}
+          text={"De l'ombre à la lumière"}
+          alt={'Banner'}
+        />
+        <article className="gallery-container">
+          <p>Chargement des images ...</p>
+        </article>
+      </main>
+    );
+  if (!data)
+    return (
+      <main>
+        <Banner
+          src={ImgBanner}
+          text={"De l'ombre à la lumière"}
+          alt={'Banner'}
+        />
+        <article className="gallery-container">
+          <p>Le server rencontre un problème</p>
+        </article>
+      </main>
+    );
 
   return (
     <main>
       <Banner src={ImgBanner} text={"De l'ombre à la lumière"} alt={'Banner'} />
       <article className="gallery-container">
-        {data.map((paintings, index) => (
-          <Cards key={index} paintings={paintings} />
+        {data.map((paintings) => (
+          <Cards key={paintings.id} paintings={paintings} />
         ))}
       </article>
     </main>

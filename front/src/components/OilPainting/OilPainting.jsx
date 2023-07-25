@@ -1,27 +1,31 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useQuery } from 'react-query';
 import Cards from '../Cards/Cards';
 import Data from '../../Data/Data';
 
 function OilPainting(props) {
-  const [data, setData] = useState([]);
+  const { isLoading, data } = useQuery('paintings', Data);
 
-  useEffect(() => {
-    const getData = async () => {
-      const res = await Data();
-      setData(res);
-    };
-    getData();
-  }, []);
+  if (isLoading)
+    return (
+      <article className="gallery-container">
+        <p>Chargement des images ...</p>
+      </article>
+    );
+  if (!data)
+    return (
+      <article className="gallery-container">
+        <p>Le server rencontre un problème</p>
+      </article>
+    );
 
   return (
     <article className="gallery-container">
-      {data.map((paintings, index) => (
-        <Cards
-          key={index}
-          paintings={paintings.category === 'Huiles' && paintings}
-        />
-      ))}
+      {data
+        .filter((painting) => painting.category === 'Huiles')
+        .map((painting) => (
+          <Cards key={painting.id} paintings={painting} />
+        ))}
     </article>
   );
 }

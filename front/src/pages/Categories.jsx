@@ -3,7 +3,7 @@ import './Categories.css';
 import Banner from '../components/Banner/Banner';
 import ImgBannerCat from '../assets/femme_voilier.jpg';
 
-function Categories(props) {
+function Categories() {
   return (
     <main>
       <Banner
